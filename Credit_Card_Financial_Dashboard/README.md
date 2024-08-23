@@ -1,9 +1,10 @@
 **CREDIT CARD FINANCIAL ANALYSIS DASHBOARD**
 
-**Project Overview**
+**PROJECT OVERVIEW**
 ThIS project is a comprehensive Power BI dashboard designed to provide deep insights into credit card transactions and customer behavior. The project leverages two key datasets—Credit Card and Customer—to analyze revenue, transaction volumes, customer demographics, and other financial metrics. It offers interactive visualizations that support data-driven decision-making and strategic planning for financial services.
 
-**Dashboard Features**
+**DASHBOARD FEATURES**
+
 
 **1) Credit Transaction Dashboard:-**
 
@@ -17,6 +18,7 @@ ThIS project is a comprehensive Power BI dashboard designed to provide deep insi
 Flexible Date Range: A slicer enables filtering data by Week Start Date.
 
 **Revenue Matrix:** A matrix visual displays revenue, transaction amounts, and total interest earned, broken down by Card Category.
+
 
 
 **2) Customer Transaction Dashboard:-**
@@ -34,9 +36,10 @@ Flexible Date Range: A slicer enables filtering data by Week Start Date.
 **Date Filtering:** A slicer allows users to filter data by Week Start Date.
 
 
-**Project Insights**
+**PROJECT INSIGHTS**
 
-**Overview Year-to-Date**
+
+**Overview Year-to-Date:-**
 1) Overall revenue is 55.3M.
 3) Total interest is 7.8M.
 4) Total transaction amount is 44.5M.
@@ -46,7 +49,7 @@ Flexible Date Range: A slicer enables filtering data by Week Start Date.
 8) Overall Activation rate is 57.47%.
 9) Overall Delinquent rate is 6.07%
 
-**Tools and Technologies**
+**TOOLS AND TECHNOLOGIES**
 
 **Power BI:** Used for data visualization and interactive dashboard creation.
 
