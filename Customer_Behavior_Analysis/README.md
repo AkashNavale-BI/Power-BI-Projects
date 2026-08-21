@@ -110,7 +110,8 @@ Single-page interactive dashboard connected to the SQL Server database.
 - `customer_shopping_behavior_analysis.ipynb` — Python: cleaning, feature engineering, SQL load
 - `customer_behavior_sql_queries.sql` — 10 business questions in SQL
 - `customer_behavior_dashboard.pbix` — Power BI dashboard
-- `Business_Problem_Document.pdf` — Original brief
+- `Customer_Behavior_Analysis_Deck.pptx` — Presentation summarising findings and recommendations
+- `business_problem_document.pdf` — Original brief
 - `README.md`
 
 
