@@ -1,4 +1,4 @@
-# Customer Shopping Behavior Analysis — Python, SQL & Power BI
+# Customer Shopping Behavior Analysis - Python, SQL & Power BI
 
 End-to-end analysis of a retail customer dataset (3,900 transactions, 18 attributes) covering the full workflow: data cleaning and feature engineering in Python, loading into SQL Server, business analysis through SQL, and an interactive Power BI dashboard for stakeholders.
 
@@ -6,7 +6,7 @@ End-to-end analysis of a retail customer dataset (3,900 transactions, 18 attribu
 
 ## Business Problem
 
-A retail company noticed shifting purchase patterns across demographics, product categories, and channels. Management wanted to understand what actually drives buying decisions and repeat purchases — discounts, review ratings, seasonality, shipping options, or payment preferences.
+A retail company noticed shifting purchase patterns across demographics, product categories, and channels. Management wanted to understand what actually drives buying decisions and repeat purchases-discounts, review ratings, seasonality, shipping options, or payment preferences.
 
 The core question:
 
@@ -37,12 +37,12 @@ The core question:
 - Profiled the dataset using `.info()`, `.describe()` and null checks to establish baseline data quality.
 - Found 37 missing values in `review_rating`. Rather than dropping rows or using a global mean, I filled them with the **median rating within each product category** — ratings vary meaningfully by category, so a category-level median preserves that signal.
 - Standardised all column names to lowercase with underscores for clean SQL compatibility.
-- Engineered `age_group` using quartile binning (`pd.qcut`) into Young Adult, Adult, Middle-aged and Senior — giving four balanced cohorts instead of arbitrary age brackets.
+- Engineered `age_group` using quartile binning (`pd.qcut`) into Young Adult, Adult, Middle-aged and Senior-giving four balanced cohorts instead of arbitrary age brackets.
 - Engineered `purchase_frequency_days` by mapping the text field `frequency_of_purchases` to numeric day intervals (Weekly → 7, Fortnightly → 14, Quarterly → 90, etc.), converting a categorical field into something measurable.
 - Verified `discount_applied` and `promo_code_used` were identical across all 3,900 rows, then dropped the redundant column.
 - Loaded the cleaned dataframe into SQL Server via SQLAlchemy with a trusted connection.
 
-### 2. Business Analysis — SQL
+### 2. Business Analysis - SQL
 
 Ten business questions answered using SQL Server, covering:
 
@@ -58,11 +58,11 @@ Ten business questions answered using SQL Server, covering:
 
 Queries use joins, aggregations, subqueries, CTEs, window functions and conditional aggregation.
 
-### 3. Dashboard — Power BI
+### 3. Dashboard - Power BI
 
 Single-page interactive dashboard connected to the SQL Server database.
 
-**KPI cards** built with DAX measures — Number of Customers, Average Purchase Amount, Average Review Rating.
+**KPI cards** built with DAX measures - Number of Customers, Average Purchase Amount, Average Review Rating.
 
 **Visuals:**
 - Revenue and customer count by product category (clustered column)
@@ -79,7 +79,7 @@ Single-page interactive dashboard connected to the SQL Server database.
 - Total revenue across the dataset: **$233,081** from 3,900 transactions, averaging **$59.76** per purchase.
 
 **Loyal customers carry the business**
-- Customers with more than 10 previous purchases (Loyal segment) account for **80% of total revenue** — $185,517 of $233,081 — from 3,116 of 3,900 customers. New customers contribute just **2%**. Retention is doing far more work here than acquisition.
+- Customers with more than 10 previous purchases (Loyal segment) account for **80% of total revenue** — $185,517 of $233,081 - from 3,116 of 3,900 customers. New customers contribute just **2%**. Retention is doing far more work here than acquisition.
 
 **Discounts aren't lifting basket size**
 - 43% of all transactions used a discount, yet discounted purchases averaged **$59.28** against **$60.13** for non-discounted ones. The discount is being applied without a corresponding increase in spend — worth reviewing whether it's driving incremental purchases or just reducing margin on sales that would have happened anyway.
@@ -91,7 +91,7 @@ Single-page interactive dashboard connected to the SQL Server database.
 - Clothing ($104,264) and Accessories ($74,200) together drive **77% of revenue**. Outerwear is the smallest at $18,524.
 
 **Spend is evenly distributed across demographics**
-- Revenue is remarkably flat across the four age groups (Young Adult $62,143 down to Senior $55,763) and across seasons (Fall $60,018 to Summer $55,777). There's no single dominant demographic — the customer base is broad rather than concentrated.
+- Revenue is remarkably flat across the four age groups (Young Adult $62,143 down to Senior $55,763) and across seasons (Fall $60,018 to Summer $55,777). There's no single dominant demographic - the customer base is broad rather than concentrated.
 
 ---
 
@@ -106,12 +106,12 @@ Single-page interactive dashboard connected to the SQL Server database.
 ---
 
 ## Repository Structure
-- `customer_shopping_behavior.csv` — Raw dataset (3,900 rows)
-- `customer_shopping_behavior_analysis.ipynb` — Python: cleaning, feature engineering, SQL load
-- `customer_behavior_sql_queries.sql` — 10 business questions in SQL
-- `customer_behavior_dashboard.pbix` — Power BI dashboard
-- `Customer_Behavior_Analysis_Deck.pptx` — Presentation summarising findings and recommendations
-- `business_problem_document.pdf` — Original brief
+- `customer_shopping_behavior.csv` - Raw dataset (3,900 rows)
+- `customer_shopping_behavior_analysis.ipynb` - Python: cleaning, feature engineering, SQL load
+- `customer_behavior_sql_queries.sql` - 10 business questions in SQL
+- `customer_behavior_dashboard.pbix` - Power BI dashboard
+- `Customer_Behavior_Analysis_Deck.pptx` - Presentation summarising findings and recommendations
+- `business_problem_document.pdf` - Original brief
 - `README.md`
 
 
@@ -131,6 +131,6 @@ Single-page interactive dashboard connected to the SQL Server database.
 
 ## About
 
-Built by **Akash Navale** — Data Analyst working across BI, dashboard development and customer analytics.
+Built by **Akash Navale** - Data Analyst working across BI, dashboard development and customer analytics.
 
 [LinkedIn](https://www.linkedin.com/in/akash-navale-903ab218b) · [GitHub](https://github.com/AkashNavale-BI)
