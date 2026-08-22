@@ -32,7 +32,7 @@ The core question:
 
 ## What I Did
 
-### 1. Data Preparation — Python
+### 1. Data Preparation - Python
 
 - Profiled the dataset using `.info()`, `.describe()` and null checks to establish baseline data quality.
 - Found 37 missing values in `review_rating`. Rather than dropping rows or using a global mean, I filled them with the **median rating within each product category** — ratings vary meaningfully by category, so a category-level median preserves that signal.
@@ -79,10 +79,10 @@ Single-page interactive dashboard connected to the SQL Server database.
 - Total revenue across the dataset: **$233,081** from 3,900 transactions, averaging **$59.76** per purchase.
 
 **Loyal customers carry the business**
-- Customers with more than 10 previous purchases (Loyal segment) account for **80% of total revenue** — $185,517 of $233,081 - from 3,116 of 3,900 customers. New customers contribute just **2%**. Retention is doing far more work here than acquisition.
+- Customers with more than 10 previous purchases (Loyal segment) account for **80% of total revenue** - $185,517 of $233,081 - from 3,116 of 3,900 customers. New customers contribute just **2%**. Retention is doing far more work here than acquisition.
 
 **Discounts aren't lifting basket size**
-- 43% of all transactions used a discount, yet discounted purchases averaged **$59.28** against **$60.13** for non-discounted ones. The discount is being applied without a corresponding increase in spend — worth reviewing whether it's driving incremental purchases or just reducing margin on sales that would have happened anyway.
+- 43% of all transactions used a discount, yet discounted purchases averaged **$59.28** against **$60.13** for non-discounted ones. The discount is being applied without a corresponding increase in spend - worth reviewing whether it's driving incremental purchases or just reducing margin on sales that would have happened anyway.
 
 **Subscription isn't changing spend behaviour**
 - Only 27% of customers are subscribed, and subscribers average **$59.49** per purchase versus **$59.87** for non-subscribers. The programme currently isn't shifting purchase value, suggesting the benefits may need rethinking.
